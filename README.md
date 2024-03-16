@@ -37,7 +37,7 @@ Yes, these factors absolutely makes sense.
    - Special regestering of account users for transfer modes.
  
   # 6. **Demonstrate the performance of the model by using best set of tools**
-  - Accuracy is used for measuring accuracy.  
+- Accuracy is used for measuring accuracy.  
 - Only accuracy cannot be relied as in Fraud detection problem, recall and precision is more important than other metrics.  
 
 - We Get highest Precision in **Logistic Regression**
