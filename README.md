@@ -21,4 +21,28 @@ Fraud Detection Model contains following steps:
    - Analyse the results
 
 # 3. **What are the key factors that predict fraudulent customer?**
-'isFraud', 'oldbalanceOrg', 'type_CASH_OUT', 'type_TRANSFER' are fraud causing/predicting features.
+'isFlaggedFraud', 'oldbalanceOrg', 'type_CASH_OUT', 'type_TRANSFER' are fraud causing/predicting features.
+
+# 4. **Do these factors make sense? If yes, How? If not, How not?**  
+Yes, these factors absolutely makes sense.  
+- 'isFlaggedFraud' - column which marks transaction as a fraud or not   
+- 'oldbalanceOrg' - indicates that customer/individual with more balance in his account is prone to fraud transaction  
+- 'Cash-Out' - it refers to convert non-cash asset into Cash. Thus online selling of large goods etc is more prone to frauds.  
+- 'Transfer' - Uninformed transfers mode have found to be modes through which fraud takes place.
+
+  # 5. **What kind of prevention should be adopted while company update its infrastructure?**
+  - Can implement multiple account to distribute the huge balance.  
+   - Sperate account for online transactions.  
+   - Special mode for cash out transactions.  
+   - Special regestering of account users for transfer modes.
+ 
+  # 6. **Demonstrate the performance of the model by using best set of tools**
+  - Accuracy is used for measuring accuracy.  
+- Only accuracy cannot be relied as in Fraud detection problem, recall and precision is more important than other metrics.  
+
+- We Get highest Precision in **Logistic Regression**
+- highest Accuracy in **Random Forest Classifier**
+- highest Recall in **Random Forest Classifier**
+- highest F1 Score in  **Random Forest Classifier**
+
+By this I concludes  **Random Forest Classifier** is best model for this fraud transaction detection
